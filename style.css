@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Firacode";
+    src: url("./static/fonts/fira_code.ttf");
+}
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    font-family: "Fira Code";
+}
+
+.c1{
+    animation: appear 0.1s forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.c2{
+    animation: appear 0.3s forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+.c3{
+    animation: appear 0.3s forwards;
+    opacity: 0;
+    animation-delay: 5s;
+}
+
+.c4{
+    font-weight: bold;
+    font-size: 1.2em;
+    animation: appear 0.3s forwards;
+    opacity: 0;
+    animation-delay: 8s;
+    color: red;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
